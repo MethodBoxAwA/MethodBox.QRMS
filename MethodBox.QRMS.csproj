@@ -7,4 +7,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\Images\about.png" />
+    <None Remove="Resources\Images\exit.png" />
+    <None Remove="Resources\Images\new - 复制.png" />
+    <None Remove="Resources\Images\new.png" />
+    <None Remove="Resources\Images\open.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\about.png" />
+    <Resource Include="Resources\Images\exit.png" />
+    <Resource Include="Resources\Images\open.png" />
+    <Resource Include="test.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\new.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

@@ -2,70 +2,61 @@
     x:Class="MethodBox.QRMS.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:control="clr-namespace:MethodBox.QRMS.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:MethodBox.QRMS"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
     Width="600"
-    Height="400"
+    Height="415"
     Background="#FF303030"
     mc:Ignorable="d">
-    <Window.Resources>
-        <ControlTemplate x:Key="SideButtonTemplate" TargetType="Button">
-            <Border
-                Width="180"
-                Height="60"
-                BorderBrush="Black"
-                BorderThickness="2">
-                <StackPanel Orientation="Horizontal">
-                    <Image
-                        Width="40"
-                        Height="40"
-                        Margin="10,0,0,0"
-                        HorizontalAlignment="Left" />
-                    <StackPanel Margin="10,0,0,0" Orientation="Vertical">
-                        <TextBlock
-                            Margin="0,10,0,0"
-                            HorizontalAlignment="Center"
-                            FontFamily="exo,SimHei"
-                            FontSize="15"
-                            Foreground="White"
-                            Text="{TemplateBinding Content}" />
-                        <TextBlock
-                            Margin="0,5,0,0"
-                            FontFamily="exo,sogue UI,simHei"
-                            FontSize="12"
-                            Foreground="White">
-                            This is the detail.
-                        </TextBlock>
-                    </StackPanel>
-                </StackPanel>
-            </Border>
-            <ControlTemplate.Triggers>
-                <EventTrigger RoutedEvent="MouseEnter">
-                    <EventTrigger.Actions>
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation></DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger.Actions>
-                </EventTrigger>
-            </ControlTemplate.Triggers>
-        </ControlTemplate>
-    </Window.Resources>
+
     <Grid>
-        <StackPanel Orientation="Vertical">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel
+            Grid.Column="0"
+            Margin="0,0,0,0"
+            Orientation="Vertical">
             <TextBlock
                 Margin="20"
                 FontFamily="exo"
                 FontSize="20"
                 Foreground="White">
                 <TextBlock.Text>
-                    QRobot Management Studio
+                    Qbot Management Studio
                 </TextBlock.Text>
             </TextBlock>
-            <Button Content="New" Template="{StaticResource ResourceKey=SideButtonTemplate}" />
+            <control:SideButton
+                Margin="45,0,0,0"
+                HorizontalAlignment="Left"
+                Capital="New"
+                Detail="Create a new qq bot"
+                ImageSource="Resources/Images/new.png" />
+            <control:SideButton
+                Margin="45,15,0,0"
+                HorizontalAlignment="Left"
+                Capital="Open"
+                Detail="Open an exists project"
+                ImageSource="Resources/Images/open.png" />
+            <control:SideButton
+                Margin="45,15,0,0"
+                HorizontalAlignment="Left"
+                Capital="About"
+                Detail="Info of this software"
+                ImageSource="Resources/Images/about.png" />
+            <control:SideButton
+                Margin="45,15,0,0"
+                HorizontalAlignment="Left"
+                Capital="Exit"
+                Detail="Exit from the software"
+                ImageSource="Resources/Images/exit.png" />
+
         </StackPanel>
+
+
     </Grid>
 </Window>
