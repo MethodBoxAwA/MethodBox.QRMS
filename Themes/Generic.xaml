@@ -63,4 +63,32 @@
         </Setter>
         <Setter Property="CornerRadius" Value="5" />
     </Style>
+
+    <Style TargetType="{x:Type local:SelectListBoxItem}">
+        <Setter Property="BorderBrush">
+            <Setter.Value>
+                <SolidColorBrush Color="Transparent" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:SelectListBoxItem}">
+                    <Border>
+                        <StackPanel Orientation="Horizontal">
+                            <Image
+                                Width="20"
+                                Height="20"
+                                Source="{TemplateBinding ImageSource}" />
+                            <TextBlock
+                                Margin="10,0,0,0"
+                                FontFamily="exo"
+                                FontSize="14.1"
+                                Foreground="White"
+                                Text="{TemplateBinding Context}" />
+                        </StackPanel>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>

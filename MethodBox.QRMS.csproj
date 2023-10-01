@@ -13,12 +13,14 @@
     <None Remove="Resources\Images\new - 复制.png" />
     <None Remove="Resources\Images\new.png" />
     <None Remove="Resources\Images\open.png" />
+    <None Remove="Resources\Images\robot.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\Images\about.png" />
     <Resource Include="Resources\Images\exit.png" />
     <Resource Include="Resources\Images\open.png" />
+    <Resource Include="Resources\Images\robot.png" />
     <Resource Include="test.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

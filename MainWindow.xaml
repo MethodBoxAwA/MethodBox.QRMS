@@ -54,9 +54,20 @@
                 Capital="Exit"
                 Detail="Exit from the software"
                 ImageSource="Resources/Images/exit.png" />
-
         </StackPanel>
-
-
+        <StackPanel Grid.Column="1">
+            <TextBlock
+                Margin="20"
+                FontFamily="exo"
+                FontSize="20"
+                Foreground="White">
+                <TextBlock.Text>
+                    Project Templates
+                </TextBlock.Text>
+            </TextBlock>
+            <ListBox Margin="5,0,5,0" Background="#FF303030">
+                <control:SelectListBoxItem Context="Empty QQRobot Project" ImageSource="Resources/Images/robot.png" />
+            </ListBox>
+        </StackPanel>
     </Grid>
 </Window>
