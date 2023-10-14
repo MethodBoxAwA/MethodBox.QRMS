@@ -24,5 +24,18 @@ namespace MethodBox.QRMS
         {
             InitializeComponent();
         }
+
+        private void NewProject_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.CreateProject createProject = new Windows.CreateProject();
+            this.Hide();
+            createProject.ShowDialog();
+            this.Close();
+        }
+
+        private void ExitSoftware_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

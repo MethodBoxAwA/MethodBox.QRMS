@@ -31,9 +31,11 @@
                 </TextBlock.Text>
             </TextBlock>
             <control:SideButton
+                x:Name="NewProject"
                 Margin="45,0,0,0"
                 HorizontalAlignment="Left"
                 Capital="New"
+                Click="NewProject_Click"
                 Detail="Create a new qq bot"
                 ImageSource="Resources/Images/new.png" />
             <control:SideButton
@@ -49,9 +51,11 @@
                 Detail="Info of this software"
                 ImageSource="Resources/Images/about.png" />
             <control:SideButton
+                x:Name="ExitSoftware"
                 Margin="45,15,0,0"
                 HorizontalAlignment="Left"
                 Capital="Exit"
+                Click="ExitSoftware_Click"
                 Detail="Exit from the software"
                 ImageSource="Resources/Images/exit.png" />
         </StackPanel>
@@ -65,8 +69,35 @@
                     Project Templates
                 </TextBlock.Text>
             </TextBlock>
-            <ListBox Margin="5,0,5,0" Background="#FF303030">
+            <ListBox
+                Margin="5,0,5,0"
+                Background="#FF303030"
+                BorderThickness="0">
                 <control:SelectListBoxItem Context="Empty QQRobot Project" ImageSource="Resources/Images/robot.png" />
+                <control:SelectListBoxItem
+                    Margin="0,10,0,0"
+                    Context="QQRobot Project Template"
+                    ImageSource="Resources/Images/robot.png" />
+                <control:SelectListBoxItem
+                    Margin="0,10,0,0"
+                    Context="Empty QQRobot Workflow"
+                    ImageSource="Resources/Images/robot.png" />
+            </ListBox>
+            <TextBlock
+                Margin="20,35,0,0"
+                FontFamily="exo"
+                FontSize="20"
+                Foreground="White">
+                <TextBlock.Text>
+                    Recent Projects
+                </TextBlock.Text>
+            </TextBlock>
+            <ListBox
+                Name="RecentProjects"
+                Margin="5,5,5,0"
+                Background="#FF303030"
+                BorderThickness="0">
+                <control:SelectListBoxItem Context="No recent project yet" />
             </ListBox>
         </StackPanel>
     </Grid>

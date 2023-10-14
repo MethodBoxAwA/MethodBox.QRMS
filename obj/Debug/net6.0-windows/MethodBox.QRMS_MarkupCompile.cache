@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\MethodBox\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\
+D:\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\
 MethodBox.QRMS
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\MethodBox\Projects\MethodBox.QRMS\App.xaml
-21611351110
+D:\Projects\MethodBox.QRMS\App.xaml
+31761917516
 
-5-692253178
-194183970531
-MainWindow.xaml;Themes\Generic.xaml;
+6687769989
+1941905061893
+MainWindow.xaml;Themes\Generic.xaml;Windows\CreateProject.xaml;
 
 False
 

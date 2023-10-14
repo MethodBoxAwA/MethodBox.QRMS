@@ -42,3 +42,7 @@ D:\MethodBox\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\MethodBox.QRMS.csp
 D:\MethodBox\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\MethodBox.QRMS.sourcelink.json
 D:\MethodBox\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\MethodBox.QRMS.genruntimeconfig.cache
 D:\MethodBox\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\ref\MethodBox.QRMS.dll
+D:\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\Themes\Generic.baml
+D:\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\Windows\CreateProject.g.cs
+D:\Projects\MethodBox.QRMS\obj\Debug\net6.0-windows\Windows\CreateProject.baml
